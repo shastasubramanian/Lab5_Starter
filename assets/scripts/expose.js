@@ -1,8 +1,7 @@
 // expose.js
-
+​
 window.addEventListener('DOMContentLoaded', init);
-
-
+​
 function init() {
   // TODO
   var obj_select = document.getElementById("horn-select");
@@ -27,10 +26,6 @@ function init() {
       alert(audio_select.volume);
     });
     button.addEventListener('click',(event) => {
-      if (obj_select.selectedIndex == 3){
-        const jsConfetti = new jsConfetti()
-        jsConfetti.addConfetti()
-      }
       audio_select.play();
     });
   });
